@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="pt-br">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title></title>
+</head>
+<body>
+	<h1></h1>
+	<h2></h2>
+	<form onsubmit="login(event)">
+		<span>
+			<label for="password">email</label>
+			<input type="email" id="email" required  placeholder="insira email">
+		</span>
+		<span>
+			<label for="password">senha</label>
+			<input type="password" id="password" required  placeholder="insira senha">
+		</span>
+		<button>entrar</button>
+	</form>
+<script type="text/javascript">
+	let.inpEmail = document.querySelector('#email')
+	let.inpPass =document.querySelector('#password')
+
+
+	let.logEmail = 'test@teste.com'
+	let.logPass = 'senha'
+
+
+	function login (event){
+		event.preventDefaut();
+
+		if (inpEmail.value === logEmail) {
+			document.querySelector('h1').innerHTML = 'email certo'
+	    }
+	    else{
+	    	document.querySelector('h1').innerHTML = 'email errado'
+	    }
+
+	    if (inpEmail.value === logEmail) {
+			document.querySelector('h2').innerHTML = 'senha certo'
+	    }
+	    else{
+	    	document.querySelector('h2').innerHTML = 'senha errado'
+	    }
+	}
+	
+</script>
+</body>
+</html>
